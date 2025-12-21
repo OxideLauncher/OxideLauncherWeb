@@ -1,0 +1,30 @@
+# Reference materials (not part of the website)
+/reference
+
+# Project notes
+claude.md
+
+# Dependencies
+node_modules
+
+# Editor (keep .vscode for shared settings)
+*.swp
+*.swo
+.idea
+
+# Build output
+dist
+dist-ssr
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
