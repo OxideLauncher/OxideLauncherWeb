@@ -30,12 +30,17 @@ async function buildNewsIndex() {
     fs.mkdirSync(ARTICLES_DIR, { recursive: true });
   }
   
-  // Find all markdown files
+  // Find all markdown files (excluding templates that start with _)
   const files = await glob('*.md', { cwd: ARTICLES_DIR });
   
   const articles = [];
   
   for (const file of files) {
+    // Skip template files (files starting with _)
+    if (file.startsWith('_')) {
+      console.log(`📋 Skipping template: ${file}`);
+      continue;
+    }
     const filePath = path.join(ARTICLES_DIR, file);
     const content = fs.readFileSync(filePath, 'utf-8');
     

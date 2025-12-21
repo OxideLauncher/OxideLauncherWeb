@@ -1,24 +1,15 @@
 ---
 id: "welcome"
-title: "Welcome to Oxide Launcher!"
-date: "2025-12-20"
-category: "launcher"
-summary: "Introducing Oxide Launcher — a modern, open-source Minecraft launcher built with Rust and React."
+title: "The site is now live!"
+date: "2025-12-21"
+category: "community"
+summary: "The Oxide Launcher website is now live! (It is VERY work in progress)"
 author: "Oxide Team"
 ---
 
 Hey there! 👋
 
 We're excited to introduce Oxide Launcher, a new way to play Minecraft. If you've ever felt like existing launchers are either too slow, too cluttered, or missing features you need, we built Oxide with you in mind.
-
-## What is Oxide?
-
-Oxide is a Minecraft launcher built from scratch using Rust and React. That means:
-
-- **Fast startup times** — the launcher opens in milliseconds, not seconds
-- **Low memory usage** — Oxide stays light so your system resources go to Minecraft
-- **Modern interface** — clean design with dark and light themes
-- **Multi-platform mod support** — search and install from both CurseForge and Modrinth
 
 ## Why another launcher?
 
@@ -30,32 +21,18 @@ Good question. There are already great options like Prism Launcher and the Modri
 
 The result is something we're proud of, and we think you might like it too.
 
-## Getting started
+## Where do I start? 
 
-1. Head to the [download page](/download) and grab the latest release
-2. Run the installer
-3. Create your first instance
-4. Play!
+I would not recommend using the launcher in it's current state. It's very rough around the edges and breakign changes happen every day. 
 
-It really is that simple. No mandatory account, no telemetry, no hidden settings.
-
-## Open source
-
-Oxide is licensed under GPL-3.0, which means the source code is completely open. You can:
-
-- Read through the code to see exactly what it does
-- Report bugs or request features
-- Fork it and make your own version
-- Contribute improvements back to the project
-
-Check out our [GitHub repository](https://github.com/OxideLauncher/OxideLauncher) if you're interested.
+However, check back in a few days, weeks or even months and by then it might be something worth using!
 
 ## What's next?
 
 We're actively working on:
 
+- The website. There are tons of placeholder assets and some navigation likely does not function as intended. 
 - Linux and macOS builds (Windows is the focus for now)
-- More modloader support
 - Import/export for instances
 - Quality of life improvements based on your feedback
 

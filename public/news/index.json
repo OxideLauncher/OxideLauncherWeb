@@ -3,30 +3,12 @@
     {
       "id": "welcome",
       "slug": "welcome",
-      "title": "Welcome to Oxide Launcher!",
-      "summary": "Introducing Oxide Launcher — a modern, open-source Minecraft launcher built with Rust and React.",
-      "date": "2025-12-20",
-      "category": "launcher",
-      "author": "Oxide Team"
-    },
-    {
-      "id": "multi-instance",
-      "slug": "multi-instance",
-      "title": "Multi-Instance Support is Here",
-      "summary": "Run multiple Minecraft installations side by side, each with their own mods and settings. Perfect for modpack testing or keeping your worlds separate.",
-      "date": "2025-12-19",
-      "category": "launcher",
-      "author": "Oxide Team"
-    },
-    {
-      "id": "mod-sources",
-      "slug": "mod-sources",
-      "title": "Search Mods from CurseForge and Modrinth",
-      "summary": "Oxide integrates with both major mod platforms so you can find and install mods without leaving the launcher.",
-      "date": "2025-12-18",
-      "category": "mods",
+      "title": "The site is now live!",
+      "summary": "The Oxide Launcher website is now live! (It is VERY work in progress)",
+      "date": "2025-12-21",
+      "category": "community",
       "author": "Oxide Team"
     }
   ],
-  "lastUpdated": "2025-12-21T07:10:10.682Z"
+  "lastUpdated": "2025-12-21T08:07:40.415Z"
 }
