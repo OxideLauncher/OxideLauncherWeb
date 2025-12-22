@@ -58,7 +58,7 @@ export function Home() {
               or a stylized Minecraft-themed background with subtle gradient overlay
             */}
             <img 
-              src="/oxidebannershort.svg" 
+              src="/assets/oxidebannershort.svg" 
               alt="Oxide Launcher" 
               className="h-16 md:h-20 mb-8"
             />

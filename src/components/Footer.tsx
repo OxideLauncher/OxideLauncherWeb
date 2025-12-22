@@ -29,7 +29,7 @@ export function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
               <img 
-                src="/OxideRound.svg" 
+                src="/assets/OxideRound.svg" 
                 alt="" 
                 className="h-8 w-8" 
                 aria-hidden="true"

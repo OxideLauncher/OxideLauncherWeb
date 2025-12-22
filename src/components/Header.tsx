@@ -44,7 +44,7 @@ export function Header() {
             aria-label="Oxide Launcher - Home"
           >
             <img 
-              src="/OxideRound.svg" 
+              src="/assets/OxideRound.svg" 
               alt="" 
               className="h-8 w-8 transition-transform group-hover:scale-105" 
               aria-hidden="true"
