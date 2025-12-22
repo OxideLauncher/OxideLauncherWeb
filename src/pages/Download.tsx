@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ExternalLink, Monitor, Apple, Terminal, AlertCircle, Check } from 'lucide-react';
+import { ExternalLink, Monitor, Apple, Terminal, AlertCircle, AlertTriangle, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -61,12 +61,48 @@ export function Download() {
   return (
     <div className="container-page py-12">
       {/* Header */}
-      <div className="text-center mb-12 animate-fade-in">
+      <div className="text-center mb-8 animate-fade-in">
         <h1 className="text-4xl font-bold mb-4">Download Oxide Launcher</h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
           Get started with Oxide in just a few clicks. Select your platform below.
         </p>
       </div>
+
+      {/* Pre-Alpha Warning */}
+      <Card className="max-w-3xl mx-auto mb-12 border-orange-500/30 bg-orange-500/5">
+        <CardContent className="flex gap-4 py-6">
+          <AlertTriangle className="h-6 w-6 text-orange-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+          <div>
+            <h3 className="font-semibold mb-2 text-lg flex items-center gap-2">
+              <AlertTriangle className="h-5 w-5 text-orange-500" aria-hidden="true" />
+              Pre-Alpha Development Status
+            </h3>
+            <p className="text-sm text-muted-foreground mb-3">
+              Oxide Launcher is currently in <strong>pre-alpha development</strong> and is <strong>not ready for regular use</strong>. 
+              Current GitHub releases are intended for developers and early testers only.
+            </p>
+            <div className="space-y-2 text-sm text-muted-foreground">
+              <p>• <strong>Expect bugs, crashes, and incomplete features</strong></p>
+              <p>• <strong>Breaking changes</strong> may occur between releases</p>
+              <p>• <strong>Not recommended</strong> for daily Minecraft gameplay</p>
+              <p>• Intended for developers, contributors, and experienced testers</p>
+            </div>
+            <p className="text-sm text-muted-foreground mt-3">
+              If you're not a developer and just want to play Minecraft, please wait for our stable release announcement. 
+              Follow us on{' '}
+              <a 
+                href="https://github.com/OxideLauncher/OxideLauncher"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-medium"
+              >
+                GitHub
+              </a>
+              {' '}for updates.
+            </p>
+          </div>
+        </CardContent>
+      </Card>
 
       {/* Platform Selection */}
       <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
@@ -134,7 +170,7 @@ export function Download() {
           disabled={!platforms.find(p => p.id === selectedPlatform)?.available}
           className="min-w-[200px]"
         >
-          Download for {platforms.find(p => p.id === selectedPlatform)?.name}
+          Download Pre-Alpha Build
           <ExternalLink className="ml-2 h-5 w-5" aria-hidden="true" />
         </Button>
         <p className="text-sm text-muted-foreground mt-4">
@@ -147,6 +183,9 @@ export function Download() {
           >
             view all releases on GitHub
           </a>
+        </p>
+        <p className="text-xs text-muted-foreground/70 mt-2">
+          By downloading, you acknowledge this is pre-alpha software
         </p>
       </div>
 

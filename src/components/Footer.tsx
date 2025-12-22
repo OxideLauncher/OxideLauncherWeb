@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Github, Heart } from 'lucide-react';
+import { Github, Heart, Code } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 
 const footerLinks = {
@@ -9,7 +9,8 @@ const footerLinks = {
     { name: 'News', href: '/news' },
   ],
   community: [
-    { name: 'GitHub', href: 'https://github.com/OxideLauncher/OxideLauncher', external: true },
+    { name: 'Launcher Repo', href: 'https://github.com/OxideLauncher/OxideLauncher', external: true },
+    { name: 'Website Repo', href: 'https://github.com/OxideLauncher/OxideLauncherWeb', external: true },
     { name: 'Contributing', href: '/community#contributing' },
     { name: 'Bug Reports', href: 'https://github.com/OxideLauncher/OxideLauncher/issues', external: true },
   ],
@@ -129,15 +130,28 @@ export function Footer() {
             © {currentYear} Oxide Launcher Contributors. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <a
-              href="https://github.com/OxideLauncher/OxideLauncher"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="Visit our GitHub repository"
-            >
-              <Github className="h-5 w-5" aria-hidden="true" />
-            </a>
+            <div className="flex items-center gap-2">
+              <a
+                href="https://github.com/OxideLauncher/OxideLauncher"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="Launcher GitHub repository"
+                title="Launcher Repository"
+              >
+                <Github className="h-5 w-5" aria-hidden="true" />
+              </a>
+              <a
+                href="https://github.com/OxideLauncher/OxideLauncherWeb"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="Website GitHub repository"
+                title="Website Repository"
+              >
+                <Code className="h-5 w-5" aria-hidden="true" />
+              </a>
+            </div>
             <span className="text-sm text-muted-foreground flex items-center gap-1">
               Made with <Heart className="h-4 w-4 text-red-500" aria-label="love" /> and Rust
             </span>

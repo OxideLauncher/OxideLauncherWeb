@@ -184,16 +184,31 @@ export function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-primary/5 border-y border-border">
         <div className="container-page text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to get started?</h2>
-          <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
-            Download Oxide Launcher and set up your first instance in minutes. It's free, open source, and yours to keep.
+          <h2 className="text-3xl font-bold mb-4">Ready to try Oxide?</h2>
+          <p className="text-muted-foreground text-lg mb-2 max-w-xl mx-auto">
+            Oxide Launcher is in active development. Pre-alpha builds are available for developers and early testers.
           </p>
-          <Button asChild size="xl">
-            <Link to="/download">
-              <DownloadIcon className="mr-2 h-5 w-5" aria-hidden="true" />
-              Download Now
-            </Link>
-          </Button>
+          <p className="text-sm text-muted-foreground/70 mb-8 max-w-xl mx-auto">
+            Not ready for stable daily use yet — but you can follow our progress on GitHub!
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" variant="outline">
+              <Link to="/download">
+                <DownloadIcon className="mr-2 h-5 w-5" aria-hidden="true" />
+                View Pre-Alpha Builds
+              </Link>
+            </Button>
+            <Button asChild size="lg">
+              <a 
+                href="https://github.com/OxideLauncher/OxideLauncher" 
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Follow Development
+                <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
     </div>
