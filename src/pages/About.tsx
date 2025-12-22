@@ -121,17 +121,17 @@ export function About() {
           This is just an honest look at what each one offers.
         </p>
         
-        <div className="overflow-x-auto">
-          <table className="w-full max-w-3xl mx-auto" role="table">
+        <div className="overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0">
+          <table className="w-full max-w-4xl mx-auto text-sm" role="table">
             <thead>
               <tr className="border-b border-border">
-                <th className="py-4 px-4 text-left font-semibold" scope="col">Feature</th>
-                <th className="py-4 px-4 text-center font-semibold" scope="col">
+                <th className="py-4 px-2 md:px-4 text-left font-semibold" scope="col">Feature</th>
+                <th className="py-4 px-2 md:px-3 text-center font-semibold" scope="col">
                   <span className="text-primary">Oxide</span>
                 </th>
-                <th className="py-4 px-4 text-center font-semibold" scope="col">Prism</th>
-                <th className="py-4 px-4 text-center font-semibold" scope="col">Modrinth</th>
-                <th className="py-4 px-4 text-center font-semibold" scope="col">CurseForge</th>
+                <th className="py-4 px-2 md:px-3 text-center font-semibold" scope="col">Prism</th>
+                <th className="py-4 px-2 md:px-3 text-center font-semibold" scope="col">Modrinth</th>
+                <th className="py-4 px-2 md:px-3 text-center font-semibold" scope="col">CurseForge</th>
               </tr>
             </thead>
             <tbody>
@@ -140,26 +140,26 @@ export function About() {
                   key={row.feature} 
                   className={index % 2 === 0 ? 'bg-muted/30' : ''}
                 >
-                  <td className="py-3 px-4 text-sm">{row.feature}</td>
-                  <td className="py-3 px-4">
+                  <td className="py-3 px-2 md:px-4 text-xs md:text-sm whitespace-nowrap">{row.feature}</td>
+                  <td className="py-3 px-2 md:px-3">
                     <div className="flex justify-center">
                       <ComparisonIcon value={row.oxide} />
                     </div>
                   </td>
-                  <td className="py-3 px-4">
+                  <td className="py-3 px-2 md:px-3">
                     <div className="flex justify-center">
                       <ComparisonIcon value={row.prism} />
                     </div>
                   </td>
-                  <td className="py-3 px-4">
+                  <td className="py-3 px-2 md:px-3">
                     <div className="flex justify-center">
                       <ComparisonIcon value={row.modrinth} />
                     </div>
-                  <td className="py-3 px-4">
+                  </td>
+                  <td className="py-3 px-2 md:px-3">
                     <div className="flex justify-center">
                       <ComparisonIcon value={row.curseforge} />
                     </div>
-                  </td>
                   </td>
                 </tr>
               ))}
