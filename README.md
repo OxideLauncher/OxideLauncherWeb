@@ -28,4 +28,4 @@ npm run preview
 
 ## License
 
-GPL-3.0 — same as the launcher.
+AGPL-3.0 
