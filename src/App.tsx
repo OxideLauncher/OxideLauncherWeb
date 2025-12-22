@@ -2,6 +2,7 @@ import { HashRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { ThemeProvider } from '@/hooks/useTheme';
 import { Layout } from '@/components/Layout';
+import { ScrollToTop } from '@/components/ScrollToTop';
 import { Home } from '@/pages/Home';
 import { Download } from '@/pages/Download';
 import { News } from '@/pages/News';
@@ -22,6 +23,7 @@ function App() {
     <ThemeProvider>
       <TooltipProvider>
         <Router>
+          <ScrollToTop />
           <Routes>
             <Route element={<MainLayout />}>
               <Route path="/" element={<Home />} />

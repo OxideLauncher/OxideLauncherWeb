@@ -90,22 +90,14 @@ export function Home() {
           </div>
         </div>
         
-        {/* 
-          PLACEHOLDER IMAGE: Screenshot section
-          Suggested: A screenshot or mockup of the launcher UI showing the instances view,
-          preferably in dark mode to match the default theme. Could be a browser mockup
-          or just a clean screenshot with rounded corners and subtle shadow.
-        */}
         <div className="container-page pb-16">
           <div className="relative mx-auto max-w-5xl">
             <div className="rounded-xl border border-border bg-card p-2 shadow-2xl">
-              <div className="aspect-video rounded-lg bg-muted flex items-center justify-center">
-                <p className="text-muted-foreground text-center px-4">
-                  [PLACEHOLDER: Screenshot of Oxide Launcher - 
-                  Show the main instances view with a few Minecraft instances, 
-                  demonstrating the modern UI design]
-                </p>
-              </div>
+              <img 
+                src="/assets/Instanceview.webp" 
+                alt="Oxide Launcher Instance View - Main interface showing Minecraft instances" 
+                className="aspect-video rounded-lg w-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -171,18 +163,13 @@ export function Home() {
               </div>
             </div>
             
-            {/* 
-              PLACEHOLDER IMAGE: Side illustration
-              Suggested: An illustration showing the comparison between launchers,
-              or a stylized graphic of the Oxide logo with some Minecraft elements.
-              Could also be a second screenshot showing mod browser or settings.
-            */}
             <div className="relative">
-              <div className="rounded-xl border border-border bg-card p-8 aspect-square flex items-center justify-center">
-                <p className="text-muted-foreground text-center">
-                  [PLACEHOLDER: Illustration or second screenshot - 
-                  Could show mod browser, settings page, or a stylized comparison graphic]
-                </p>
+              <div className="rounded-xl border border-border bg-card p-2">
+                <img 
+                  src="/assets/browsemodpacks.webp" 
+                  alt="Oxide Launcher Modpack Browser - Browse and download modpacks" 
+                  className="rounded-lg w-full object-cover"
+                />
               </div>
             </div>
           </div>
