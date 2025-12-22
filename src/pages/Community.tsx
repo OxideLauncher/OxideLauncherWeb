@@ -2,6 +2,7 @@ import { Github, MessageSquare, Bug, Code, Heart, Users } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
+import { GitHubStats } from '@/components/GitHubStats';
 
 const communityLinks = [
   {
@@ -92,6 +93,13 @@ export function Community() {
             </Card>
           ))}
         </div>
+      </section>
+
+      <Separator className="mb-16" />
+
+      {/* GitHub Statistics */}
+      <section className="mb-16">
+        <GitHubStats />
       </section>
 
       <Separator className="mb-16" />

@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { GitHubBadge } from '@/components/GitHubBadge';
 
 const features = [
   {
@@ -60,8 +61,12 @@ export function Home() {
             <img 
               src="/assets/oxidebannershort.svg" 
               alt="Oxide Launcher" 
-              className="h-16 md:h-20 mb-8"
+              className="h-16 md:h-20 mb-6"
             />
+
+            <div className="mb-8">
+              <GitHubBadge />
+            </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
               A Minecraft launcher that just{' '}
