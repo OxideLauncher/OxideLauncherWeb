@@ -73,8 +73,7 @@ export function Download() {
         <CardContent className="flex gap-4 py-6">
           <AlertTriangle className="h-6 w-6 text-orange-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
           <div>
-            <h3 className="font-semibold mb-2 text-lg flex items-center gap-2">
-              <AlertTriangle className="h-5 w-5 text-orange-500" aria-hidden="true" />
+            <h3 className="font-semibold mb-2 text-lg">
               Pre-Alpha Development Status
             </h3>
             <p className="text-sm text-muted-foreground mb-3">

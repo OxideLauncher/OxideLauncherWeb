@@ -36,14 +36,14 @@ const features = [
 ];
 
 const comparisonFeatures = [
-  { feature: 'Built with Rust', oxide: true, prism: false, modrinth: true },
-  { feature: 'Modern React UI', oxide: true, prism: false, modrinth: true },
-  { feature: 'Native performance', oxide: true, prism: true, modrinth: true },
-  { feature: 'Multi-instance support', oxide: true, prism: true, modrinth: true },
-  { feature: 'CurseForge integration', oxide: true, prism: true, modrinth: false },
-  { feature: 'Modrinth integration', oxide: true, prism: true, modrinth: true },
-  { feature: 'Open source', oxide: true, prism: true, modrinth: true },
-  { feature: 'Active development', oxide: true, prism: true, modrinth: true },
+  { feature: 'Built with Rust', oxide: true, prism: false, modrinth: true, curseforge: false },
+  { feature: 'Modern React UI', oxide: true, prism: false, modrinth: true, curseforge: false },
+  { feature: 'Native performance', oxide: true, prism: true, modrinth: true, curseforge: false },
+  { feature: 'Multi-instance support', oxide: true, prism: true, modrinth: true, curseforge: true },
+  { feature: 'CurseForge integration', oxide: true, prism: true, modrinth: false, curseforge: true },
+  { feature: 'Modrinth integration', oxide: true, prism: true, modrinth: true, curseforge: false },
+  { feature: 'Open source', oxide: true, prism: true, modrinth: true, curseforge: false },
+  { feature: 'Cross-platform support', oxide: true, prism: true, modrinth: true, curseforge: true },
 ];
 
 function ComparisonIcon({ value }: { value: boolean }) {
@@ -131,6 +131,7 @@ export function About() {
                 </th>
                 <th className="py-4 px-4 text-center font-semibold" scope="col">Prism</th>
                 <th className="py-4 px-4 text-center font-semibold" scope="col">Modrinth</th>
+                <th className="py-4 px-4 text-center font-semibold" scope="col">CurseForge</th>
               </tr>
             </thead>
             <tbody>
@@ -154,6 +155,11 @@ export function About() {
                     <div className="flex justify-center">
                       <ComparisonIcon value={row.modrinth} />
                     </div>
+                  <td className="py-3 px-4">
+                    <div className="flex justify-center">
+                      <ComparisonIcon value={row.curseforge} />
+                    </div>
+                  </td>
                   </td>
                 </tr>
               ))}
