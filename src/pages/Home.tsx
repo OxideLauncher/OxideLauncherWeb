@@ -12,6 +12,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { GitHubBadge } from '@/components/GitHubBadge';
+import { useThemeImage } from '@/hooks/useThemeImage';
 
 const features = [
   {
@@ -47,6 +48,9 @@ const features = [
 ];
 
 export function Home() {
+  const instanceViewImage = useThemeImage('/assets/InstanceView.webp');
+  const browseModpacksImage = useThemeImage('/assets/BrowseModpacks.webp');
+
   return (
     <div>
       {/* Hero Section */}
@@ -99,7 +103,7 @@ export function Home() {
           <div className="relative mx-auto max-w-5xl">
             <div className="rounded-xl border border-border bg-card p-2 shadow-2xl">
               <img 
-                src="/assets/Instanceview.webp" 
+                src={instanceViewImage} 
                 alt="Oxide Launcher Instance View - Main interface showing Minecraft instances" 
                 className="aspect-video rounded-lg w-full object-cover"
               />
@@ -171,7 +175,7 @@ export function Home() {
             <div className="relative">
               <div className="rounded-xl border border-border bg-card p-2">
                 <img 
-                  src="/assets/browsemodpacks.webp" 
+                  src={browseModpacksImage} 
                   alt="Oxide Launcher Modpack Browser - Browse and download modpacks" 
                   className="rounded-lg w-full object-cover"
                 />
