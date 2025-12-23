@@ -1,0 +1,8 @@
+# Oxide Launcher Website
+# https://oxidelauncher.org
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://oxidelauncher.org/sitemap.xml

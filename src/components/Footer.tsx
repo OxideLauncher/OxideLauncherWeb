@@ -127,7 +127,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Oxide Launcher Contributors. All rights reserved.
+            © {currentYear} Oxide Launcher Contributors.
           </p>
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
