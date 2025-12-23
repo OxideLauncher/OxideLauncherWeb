@@ -105,7 +105,7 @@ export function Home() {
               <img 
                 src={instanceViewImage} 
                 alt="Oxide Launcher Instance View - Main interface showing Minecraft instances" 
-                className="aspect-video rounded-lg w-full object-cover"
+                className="rounded-lg w-full h-auto object-contain"
               />
             </div>
           </div>
@@ -177,7 +177,7 @@ export function Home() {
                 <img 
                   src={browseModpacksImage} 
                   alt="Oxide Launcher Modpack Browser - Browse and download modpacks" 
-                  className="rounded-lg w-full object-cover"
+                  className="rounded-lg w-full h-auto object-contain"
                 />
               </div>
             </div>
